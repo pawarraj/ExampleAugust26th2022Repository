@@ -1,4 +1,4 @@
-package ThreadsPractice;
+package Com.ThreadParctice;
 
 class MyThread1 implements Runnable
 {
