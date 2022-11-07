@@ -1,10 +1,10 @@
-package PageObjectModel;
+package applicationassighnments;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ActiTimePage 
+public class Assignments8 
 {
 	public static WebDriver oBrowser=null;
 
@@ -24,7 +24,7 @@ public class ActiTimePage
 		close();
 
 	}
-
+	
 	private static void launchBrowser()
 	{
 		try
@@ -38,7 +38,7 @@ public class ActiTimePage
 			e.printStackTrace();
 		}
 	}
-
+	
 	private static void navigate()
 	{
 		try
@@ -50,7 +50,7 @@ public class ActiTimePage
 			e.printStackTrace();
 		}
 	}
-
+	
 	private static void login()
 	{
 		try
@@ -64,7 +64,7 @@ public class ActiTimePage
 			e.printStackTrace();
 		}
 	}
-
+	
 	private static void minimize()
 	{
 		try
@@ -76,7 +76,7 @@ public class ActiTimePage
 			e.printStackTrace();
 		}
 	}
-
+	
 	private static void createcustomer()
 	{
 		try
@@ -99,7 +99,7 @@ public class ActiTimePage
 			e.printStackTrace();
 		}
 	}
-
+	
 	private static void createproject()
 	{
 		try
@@ -118,7 +118,7 @@ public class ActiTimePage
 			e.printStackTrace();
 		}
 	}
-
+	
 	private static void createTasks()
 	{
 		try
@@ -131,13 +131,13 @@ public class ActiTimePage
 			Thread.sleep(2000);
 			oBrowser.findElement(By.xpath("//span[text()='Create Tasks']")).click();
 			Thread.sleep(3000);
-
+			
 		}catch(Exception e)
 		{
 			e.printStackTrace();
 		}
 	}
-
+	
 	private static void deletetask()
 	{
 		try
@@ -155,7 +155,7 @@ public class ActiTimePage
 			e.printStackTrace();
 		}
 	}
-
+	
 	private static void deleteproject()
 	{
 		try
@@ -173,7 +173,7 @@ public class ActiTimePage
 			e.printStackTrace();
 		}
 	}
-
+	
 	private static void deletecustomer()
 	{
 		try
@@ -189,7 +189,7 @@ public class ActiTimePage
 			e.printStackTrace();
 		}
 	}
-
+	
 	private static void logout()
 	{
 		try
@@ -201,7 +201,7 @@ public class ActiTimePage
 			e.printStackTrace();
 		}
 	}
-
+	
 	private static void close()
 	{
 		try
@@ -213,7 +213,7 @@ public class ActiTimePage
 			e.printStackTrace();
 		}
 	}
-
+			
 }
 
 
