@@ -8,7 +8,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class WriteExcelContentDemo {
+public class Write20FlowersName {
 	public static void main(String[] args) 
 	{
 		writeContent();
@@ -24,20 +24,17 @@ public class WriteExcelContentDemo {
 		try
 		{
 			wb=new XSSFWorkbook();
-			sh=wb.createSheet("Credentials");
-			//First Row
-			row=sh.createRow(0);
-			cell=row.createCell(0);
-			cell.setCellValue("UserName");
-			cell=row.createCell(1);
-			cell.setCellValue("Password");
-			//Second Row
-			row=sh.createRow(1);
-			cell=row.createCell(0);
-			cell.setCellValue("admin");
-			cell=row.createCell(1);
-			cell.setCellValue("manager");
-			fout=new FileOutputStream("D:\\EXCEL\\Wel.xlsx");
+			sh=wb.createSheet("Flower name");
+			
+			for(int i=0;i<20;i++)
+			{
+				row=sh.createRow(i);
+				
+				cell=row.createCell(0);
+				cell.setCellValue("Flower"+i);
+			}
+
+			fout=new FileOutputStream("D:\\EXCEL\\Assignment1.xlsx");
 			wb.write(fout);
 		}catch (Exception e) 
 		{
