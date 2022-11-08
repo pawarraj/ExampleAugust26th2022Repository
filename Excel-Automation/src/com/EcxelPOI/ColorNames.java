@@ -17,6 +17,7 @@ public class ColorNames
 	}
 	private static void Writecontent()
 	{
+		//Write 20ColorNames in FirstSheet,10th Row of Excel File
 		FileOutputStream fout=null;
 		Workbook wb=null;
 		Sheet sh=null;
