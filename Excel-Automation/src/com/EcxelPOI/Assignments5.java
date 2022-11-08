@@ -8,15 +8,16 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class Write20FlowersName {
+public class Assignments5 
+{
+
 	public static void main(String[] args) 
 	{
-		writeContent();
-
+		Write();
 	}
-	private static void writeContent()
+	private static void Write()
 	{
-		//Write 20Flowers Names in FirstSheet,FirstColumn in ExcelFile
+	//Write 20StateNames Diagonal of an Excel File
 		FileOutputStream fout=null;
 		Workbook wb=null;
 		Sheet sh=null;
@@ -25,19 +26,21 @@ public class Write20FlowersName {
 		try
 		{
 			wb=new XSSFWorkbook();
-			sh=wb.createSheet("Flower name");
+			sh=wb.createSheet("States");
+			String s[]= {"Karnataka","Telangana","goa","AndhraPradesh","tamilnadu","Kerala","Maharashtra","Gujurath","Rajasthan","Maharashtra","MadhyaPradesh","Chattisgarh","Bihar","Assam","Meghalaya","Tripura","Mizoram","Nagaland","Manipur","Sikkim"};
 			
-			for(int i=0;i<20;i++)
+			for(int i=0;i<s.length;i++)
 			{
 				row=sh.createRow(i);
+				cell=row.createCell(i);
 				
-				cell=row.createCell(0);
-				cell.setCellValue("Flower"+i);
+				cell.setCellValue(s[i]);
 			}
-
-			fout=new FileOutputStream("D:\\EXCEL\\Assignment1.xlsx");
-			wb.write(fout);
-		}catch (Exception e) 
+			
+			fout=new FileOutputStream("D:\\EXCEL\\Assignment5.xlsx");
+			wb.write(fout);		
+			
+		}catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -47,11 +50,13 @@ public class Write20FlowersName {
 			{
 				fout.close();
 				wb.close();
-			}catch (Exception e) 
+			}catch(Exception e)
 			{
 				e.printStackTrace();
 			}
 		}
 	}
-
 }
+
+
+
