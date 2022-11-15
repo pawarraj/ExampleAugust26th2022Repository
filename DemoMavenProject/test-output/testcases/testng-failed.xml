@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testcases]">
+  <test thread-count="5" name="Users(failed)">
+    <classes>
+      <class name="com.sgtesting.tests.testcases.Assignment1">
+        <methods>
+          <include name="navigate"/>
+        </methods>
+      </class> <!-- com.sgtesting.tests.testcases.Assignment1 -->
+    </classes>
+  </test> <!-- Users(failed) -->
+</suite> <!-- Failed suite [testcases] -->
