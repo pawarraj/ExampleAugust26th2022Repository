@@ -1,4 +1,4 @@
-package TestQuetions;
+package testquetions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
