@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-18T17:20:04 IST" name="Default suite" finished-at="2022-11-18T17:20:05 IST" duration-ms="64">
+    <groups>
+    </groups>
+    <test started-at="2022-11-18T17:20:04 IST" name="Default test" finished-at="2022-11-18T17:20:05 IST" duration-ms="64">
+      <class name="com.sgtesting.calculator.testcases.SubstractionTestcases">
+        <test-method signature="substractPositiveAndNegativeNumbers()[pri:0, instance:com.sgtesting.calculator.testcases.SubstractionTestcases@69997e9d]" started-at="2022-11-18T17:20:05 IST" name="substractPositiveAndNegativeNumbers" finished-at="2022-11-18T17:20:05 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- substractPositiveAndNegativeNumbers -->
+        <test-method signature="substractPositiveAndZeroNumbers()[pri:0, instance:com.sgtesting.calculator.testcases.SubstractionTestcases@69997e9d]" started-at="2022-11-18T17:20:05 IST" name="substractPositiveAndZeroNumbers" finished-at="2022-11-18T17:20:05 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- substractPositiveAndZeroNumbers -->
+        <test-method signature="substractTwoNegativeNumbers()[pri:0, instance:com.sgtesting.calculator.testcases.SubstractionTestcases@69997e9d]" started-at="2022-11-18T17:20:05 IST" name="substractTwoNegativeNumbers" finished-at="2022-11-18T17:20:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- substractTwoNegativeNumbers -->
+        <test-method signature="substractTwoPositiveNumbers()[pri:0, instance:com.sgtesting.calculator.testcases.SubstractionTestcases@69997e9d]" started-at="2022-11-18T17:20:05 IST" name="substractTwoPositiveNumbers" finished-at="2022-11-18T17:20:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- substractTwoPositiveNumbers -->
+      </class> <!-- com.sgtesting.calculator.testcases.SubstractionTestcases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
