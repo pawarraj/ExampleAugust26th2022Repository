@@ -1,4 +1,4 @@
-package com.reflection5;
+package com.sgtesting.reflection5;
 
 public class StringDemo1 {
 	
