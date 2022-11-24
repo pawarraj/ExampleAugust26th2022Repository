@@ -62,6 +62,7 @@ public class StepDefinitions {
 		}
 	}
 
+
 	/**
 	 *  I enter password in password text field
 	 */
@@ -126,6 +127,79 @@ public class StepDefinitions {
 			e.printStackTrace();
 		}
 	}
+	@And("^I click on the User$")
+	public void I_click_on_the_User()
+	{
+		try
+		{
+			oBrowser.findElement(By.xpath("//*[@id='topnav']/tbody/tr[1]/td[5]/a/div[2]")).click();
+			Thread.sleep(1000);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	@And("^I click on Add user$")
+	public void I_click_on_Add_user()
+	{
+		try
+		{
+			oBrowser.findElement(By.xpath("//div[text()='Add User']")).click();
+			Thread.sleep(1000);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	@Then("^I send sendkeys$")
+	public void I_send_sendkeys()
+	{
+		try
+		{
+			oBrowser.findElement(By.name("firstName")).sendKeys("User");
+			oBrowser.findElement(By.name("middleName")).sendKeys(" ");
+			oBrowser.findElement(By.name("lastName")).sendKeys("1");
+			oBrowser.findElement(By.name("email")).sendKeys("User@gmail.com");
+			oBrowser.findElement(By.name("username")).sendKeys("uname");
+			oBrowser.findElement(By.name("password")).sendKeys("pwd");
+			oBrowser.findElement(By.name("passwordCopy")).sendKeys("pwd");
+			Thread.sleep(2000);
+
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	@And("^I click on create user$")
+	public void  I_click_on_create_user()
+	{
+		try
+		{
+			oBrowser.findElement(By.xpath("//span[text()='Create User']")).click();
+			Thread.sleep(5000);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	@And("^I click on delete user$")
+	public void I_click_on_delete_user()
+	{
+		try
+		{
+			oBrowser.findElement(By.xpath("//span[text()='3 accounts left']"));	
+			Thread.sleep(3000);
+			oBrowser.findElement(By.xpath("//span[text()='User1, demo A.']")).click();
+			Thread.sleep(2000);
+			oBrowser.findElement(By.id("userDataLightBox_deleteBtn")).click();
+			Thread.sleep(2000);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+
 
 	/**
 	 *  I click on Logout link
@@ -176,5 +250,7 @@ public class StepDefinitions {
 			e.printStackTrace();
 		}
 	}
-
 }
+
+
+
