@@ -12,6 +12,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 @CucumberOptions(
 		features="src/test/resources/featuresfile",
 		glue="com.sgtseting.actitime.stepdefination"
+		
 )
 public class DriverScript {
 	
